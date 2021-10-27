@@ -3,6 +3,11 @@
 
 */
 
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -61,10 +66,37 @@ class Pillowcase{
       System.out.println(" We got Reese's!");
       return "Reese's"; 
     }
+    // Add new candy object to candies ArrayList??????
+  }
 
-    
+  // method printNumCandies()
+  // NOT SURE how to do. Googled this result.
+  public static void printNumCandies(ArrayList<String> candyArray){
+    Map<String, Integer> hm = new HashMap<String, Integer>();
+    for (String i : candyArray) {
+      Integer j = hm.get(i);
+      hm.put(i, (j == null) ? 1 : j + 1);
+    }
+  
+    // displaying the occurrence of elements in the arraylist
+    for (Map.Entry<String, Integer> val : hm.entrySet()) {
+      System.out.println("Element " + val.getKey() + " "
+                          + "occurs"
+                          + ": " + val.getValue() + " times");
+    }
+
   }
 
 
+}    
 
-}
+/*
+    cdnames.add("Kit Kat");
+    cdnames.add("M&Ms");
+    cdnames.add("Pink Starburst");
+    cdnames.add("Hershey's Bar");
+    cdnames.add("Milky Way");
+    cdnames.add("Twix");
+    cdnames.add("Reese's");
+
+*/
