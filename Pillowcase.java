@@ -72,6 +72,7 @@ class Pillowcase{
   // method printNumCandies()
   // NOT SURE how to do. Googled this result.
   public static void printNumCandies(ArrayList<String> candyArray){
+    System.out.println("We got...");
     Map<String, Integer> hm = new HashMap<String, Integer>();
     for (String i : candyArray) {
       Integer j = hm.get(i);
@@ -80,9 +81,7 @@ class Pillowcase{
   
     // displaying the occurrence of elements in the arraylist
     for (Map.Entry<String, Integer> val : hm.entrySet()) {
-      System.out.println("Element " + val.getKey() + " "
-                          + "occurs"
-                          + ": " + val.getValue() + " times");
+      System.out.println(val.getValue() + " " + val.getKey());
     }
 
   }
