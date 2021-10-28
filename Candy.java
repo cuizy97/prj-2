@@ -1,5 +1,5 @@
-/* @author: ZiYan Cui
-@version: 10.27.2021
+/* @author: 
+@version: 
 */
 class Candy {
   private String name;
@@ -14,8 +14,8 @@ class Candy {
   }
 
   // mutator to set a candy name
-  public void setName(String aName) {
-    name = aName;
+  void setName(String theName) {
+    name = theName;
   }
   
   // accessor to get a candy name 
@@ -25,7 +25,7 @@ class Candy {
 
   // print() method: print the name of the candy
   public void print(){
-    System.out.println(name);
+    System.out.print(name);
   }
   
 }
