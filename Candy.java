@@ -3,7 +3,6 @@
 */
 class Candy {
   private String name;
-
   // constructor with no parameters
   Candy() {
     name = "";
